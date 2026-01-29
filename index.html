@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aplikasi Link Bestie</title>
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#1976d2" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+    }
+    header {
+      background: #1976d2;
+      color: white;
+      padding: 16px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .container {
+      padding: 16px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 12px;
+    }
+    a.button {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      background: white;
+      border-radius: 12px;
+      padding: 20px 10px;
+      color: #1976d2;
+      font-weight: bold;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+    a.button span {
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: #777;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  📱 Aplikasi Link Bestie
+</header>
+
+<div class="container">
+  <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSeEg9lEwGEtuvzK723HjGtMDDEuABOVDpDRpLi2LtwYOdDUMA/viewform" target="_blank">
+    <span>📝</span>
+    Laporan LTT Kalaena
+  </a>
+  <a class="button" href="https://docs.google.com/spreadsheets/d/1iZCVseYIMDUWMigT7NlhA2wK-jn2UyxrrR3ovfyB25Q/edit" target="_blank">
+    <span>📊</span>
+    Rekap LTT
+  </a>
+  <a class="button" href="https://dev.epusluh.id/home" target="_blank">
+    <span>🌐</span>
+    e-PUSLUH
+  </a>
+  <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLScd0rcUAjxEDq_cZM4kYFSs7pbTuwbPDc3cR1yrVVWZJ6N2XA/viewform" target="_blank">
+    <span>📝</span>
+    Presensi
+  </a>
+</div>
+
+<footer>
+  © 2026 • Dibuat bareng Bestie 😄
+</footer>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js');
+  }
+</script>
+
+</body>
+</html>
